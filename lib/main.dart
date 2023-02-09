@@ -12,13 +12,12 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'MSD',
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         // appBar: AppBar(
         //   title: const Text('MSD'),
         // ),
-        body: SafeArea(
-          child: LoginScreen(),
-        ),
+        body: LoginScreen(),
       ),
     );
   }
